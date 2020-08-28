@@ -45,34 +45,34 @@
         "id": 6,
         "name": "Monte Carlo",
         "image": ,
-        "light": "",
+        "light": "Medium",
     },
 
     {
         "id": 7,
-        "name": ,
+        "name": "Hygro. Pinnatifida",
         "image": ,
-        "light": ,
+        "light": "High",
     },
 
     {
         "id": 8,
-        "name": ,
+        "name": "Pogostemon",
         "image": ,
-        "light": ,
+        "light": "High",
     },
 
     {
         "id": 9,
-        "name": ,
+        "name": "Ludwigia",
         "image": ,
-        "light": ,
+        "light": "Medium",
     },
 
     {
         "id": 10,
-        "name": ,
+        "name": "Bacopa",
         "image": ,
-        "light": ,
+        "light": "Low",
     }
 ]
