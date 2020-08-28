@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './App.css'
+import './reset.css'
 
 export default class App extends Component {
 
@@ -11,9 +12,21 @@ export default class App extends Component {
 
       <div className='body'>
 
-        <div className='header'>
-          
-        </div>
+        <header className='header'>
+          <h1 className='tanktitle'> FISH TANK BUILDER </h1>
+        </header>
+
+        <section className='plantsContent' getElementByID='section'>
+          <div className='plantsDisplay'>
+
+          </div>
+        </section>
+
+        <footer className='tankContent'>
+          <div className='tankObject'> Scott's Fish Tank 
+            <div className='tanksPlantDisplay'></div>
+          </div>
+        </footer>
 
       </div>
     )
