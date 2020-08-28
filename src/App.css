@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@import './reset.css'
 
 .header {
   height: 8vh;
