@@ -3,76 +3,76 @@
         "id": 0,
         "name": "Java Fern",
         "image": ,
-        "light": "Low",
+        "light": "Low"
     },
 
     {
         "id": 1,
         "name": "Anubias Nana",
         "image": ,
-        "light": "Low",
+        "light": "Low"
     },
 
     {
         "id": 2,
         "name": "Bucephalandra",
         "image": ,
-        "light": "Medium",
+        "light": "Medium"
     },
 
     {
         "id": 3,
         "name": "Rotala",
         "image": ,
-        "light": "High",
+        "light": "High"
     },
 
     {
         "id": 4,
         "name": "Cryptocoryne",
         "image": ,
-        "light": "Medium",
+        "light": "Medium"
     },
 
     {
         "id": 5,
         "name": "Bolbitis",
         "image": ,
-        "light": "Low",
+        "light": "Low"
     },
 
     {
         "id": 6,
         "name": "Monte Carlo",
         "image": ,
-        "light": "Medium",
+        "light": "Medium"
     },
 
     {
         "id": 7,
         "name": "Hygro. Pinnatifida",
         "image": ,
-        "light": "High",
+        "light": "High"
     },
 
     {
         "id": 8,
         "name": "Pogostemon",
         "image": ,
-        "light": "High",
+        "light": "High"
     },
 
     {
         "id": 9,
         "name": "Ludwigia",
         "image": ,
-        "light": "Medium",
+        "light": "Medium"
     },
 
     {
         "id": 10,
         "name": "Bacopa",
         "image": ,
-        "light": "Low",
+        "light": "Low"
     }
 ]
