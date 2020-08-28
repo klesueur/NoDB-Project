@@ -1,0 +1,78 @@
+[
+    {
+        "id": 0,
+        "name": "Java Fern",
+        "image": ,
+        "light": "Low",
+    },
+
+    {
+        "id": 1,
+        "name": "Anubias Nana",
+        "image": ,
+        "light": "Low",
+    },
+
+    {
+        "id": 2,
+        "name": "Bucephalandra",
+        "image": ,
+        "light": "Medium",
+    },
+
+    {
+        "id": 3,
+        "name": "Rotala",
+        "image": ,
+        "light": "High",
+    },
+
+    {
+        "id": 4,
+        "name": "Cryptocoryne",
+        "image": ,
+        "light": "Medium",
+    },
+
+    {
+        "id": 5,
+        "name": "Bolbitis",
+        "image": ,
+        "light": "Low",
+    },
+
+    {
+        "id": 6,
+        "name": "Monte Carlo",
+        "image": ,
+        "light": "",
+    },
+
+    {
+        "id": 7,
+        "name": ,
+        "image": ,
+        "light": ,
+    },
+
+    {
+        "id": 8,
+        "name": ,
+        "image": ,
+        "light": ,
+    },
+
+    {
+        "id": 9,
+        "name": ,
+        "image": ,
+        "light": ,
+    },
+
+    {
+        "id": 10,
+        "name": ,
+        "image": ,
+        "light": ,
+    }
+]
