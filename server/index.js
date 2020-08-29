@@ -3,7 +3,7 @@ const app = express()
 const plantsCtrl = require('./controllers/plantsController')
 const tankCtrl = require('./controllers/tankController')
 
-const SERVER_PORT = 3444
+const SERVER_PORT = 3000
 
 app.use(express.json)
 
