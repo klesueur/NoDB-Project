@@ -5,7 +5,7 @@ const tankCtrl = require('./controllers/tankController')
 
 const SERVER_PORT = 3000
 
-app.use(express.json)
+app.use(express.json())
 
 //* Plant endpoints
 app.get('/api/plants', plantsCtrl.getAllPlants)
