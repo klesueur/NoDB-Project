@@ -1,34 +1,32 @@
-import React, {Component} from 'react'
+import React from 'react'
+import Display from '.components/Display' 
 import './App.css'
 import './reset.css'
 
-export default class App extends Component {
+function App() {
+  return(
 
-
-
-  render() {
-
-    return (
-
-      <div className='body'>
+    <div className='body'>
 
         <header className='header'>
           <h1 className='tanktitle'> FISH TANK BUILDER </h1>
         </header>
-
+        
         <section className='plantsContent' getElementByID='section'>
-          <div className='plantsDisplay'>
+            <div className='plantsDisplay'>
 
-          </div>
-        </section>
+            </div>
+            </section>
 
-        <footer className='tankContent'>
-          <div className='tankObject'> Scott's Fish Tank 
-            <div className='tanksPlantDisplay'></div>
-          </div>
-        </footer>
+            <footer className='tankContent'>
+            <div className='tankObject'> Scott's Fish Tank 
+                <div className='tanksPlantDisplay'></div>
+            </div>
+            </footer>
 
-      </div>
-    )
-  }
+        <Display />
+    </div>
+  )
 }
+
+export default App
