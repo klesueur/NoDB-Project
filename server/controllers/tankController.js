@@ -7,6 +7,7 @@ module.exports = {
     getTank: (req, res) => {
         res.status(200).send(tank)
     },
+
     addToTank: (req, res) => {
         const {plantId, quantity} = req.body
 
@@ -33,7 +34,28 @@ module.exports = {
 
         res.status(200).send(tank)
     },
-    changeQuantity: (req, res) => {},
+
+    changeQuantity: (req, res) => {
+        const {tank_id} = req.params
+        const {action} = req.query
+
+        const index = tank.plants.findIndex(element => element.tankId === +tank_id)
+
+        if (index === -1) {
+            return res.status(404).send("Plant not in Scott's fish tank.")
+        } 
+
+        if (action === 'up') {
+            tank.plants[index].quantity += 1
+        } else {
+            if(tank.plants[index].quantity > 1) {
+                tank.plants[index].quantity -= 1
+            } else {
+                tank.plants.splice(index, 1)
+            }
+        }
+    },
+
     removeFromTank: (req, res) => {},
     reset: (req, res) => {}
 }
