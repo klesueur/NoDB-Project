@@ -54,6 +54,14 @@ module.exports = {
                 tank.plants.splice(index, 1)
             }
         }
+
+        const total = tank.plants.reduce((acc, element) => {
+            return acc + element.quantity
+        },0)
+
+        tank.total = total 
+
+        res.status(200).send(tank)
     },
 
     removeFromTank: (req, res) => {},
