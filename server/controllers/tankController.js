@@ -3,6 +3,7 @@ const plants = require('../data.json')
 const tank = {total: 0, wetPlants: []}
 let tankId = 0
 
+
 module.exports = {
     getTank: (req, res) => {
         res.status(200).send(tank)
@@ -28,7 +29,7 @@ module.exports = {
 //* Below is being reused in other methods for quantity total.
         const total = tank.wetPlants.reduce((acc, element) => {
             return acc + element.quantity
-        },0)
+        }, 0)
 
         tank.total = total 
 
