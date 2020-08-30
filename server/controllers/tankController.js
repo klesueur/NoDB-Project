@@ -14,8 +14,14 @@ module.exports = {
 
         if(index === -1) {
             const plant = plants.find((element) => element.id === +plantId)
-            res.send(plant)
+
+            plant.tankId = tankId
+            plant.quantity = quantity 
+
+            tank.plants.push(plant)
         }
+
+        res.status(200).send(tank)
     },
     changeQuantity: (req, res) => {},
     removeFromTank: (req, res) => {},
