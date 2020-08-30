@@ -18,7 +18,7 @@ app.get('/api/plants', plantsCtrl.getAllPlants)
 app.get('/api/tank', tankCtrl.getTank)
 app.post('/api/tank', tankCtrl.addToTank)
 app.put('/api/tank/:tank_id', tankCtrl.changeQuantity)
-app.delete('api/tank/:tank_id', tankCtrl.removeFromTank)
+// app.delete('api/tank/:tank_id', tankCtrl.removeFromTank)
 app.delete('api/tank', tankCtrl.reset)
 
 app.listen(SERVER_PORT, () => 

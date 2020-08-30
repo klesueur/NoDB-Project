@@ -63,25 +63,25 @@ module.exports = {
         res.status(200).send(tank)
     },
 
-    removeFromTank: (req, res) => {
-        const {tank_id} = req.params
+    // removeFromTank: (req, res) => {
+    //     const {tank_id} = req.params
 
-        const index = tank.wetPlants.findIndex((element) => element.tankId === +tank_id)
+    //     const index = tank.wetPlants.findIndex((element) => element.tankId === +tank_id)
 
-        if(index === -1){
-            return res.status(404).send('Plant is not in tank')
-        }
-        tank.wetPlants.splice(index, 1)
+    //     if(index === -1){
+    //         return res.status(404).send('Plant is not in tank')
+    //     }
+    //     tank.wetPlants.splice(index, 1)
 
-        updateTankTotal()
+    //     updateTankTotal()
 
-        res.status(200).send(tank)
-    },
+    //     res.status(200).send(tank)
+    // },
 
     reset: (req, res) => {
         tank.total = 0
         tank.wetPlants = []
 
-        res.status(200).send(cart)
+        res.status(200).send(tank)
     },
 }
