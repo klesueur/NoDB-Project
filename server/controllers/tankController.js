@@ -19,6 +19,10 @@ module.exports = {
             plant.quantity = quantity 
 
             tank.plants.push(plant)
+
+            tankId++
+        } else {
+            tank.plants[index].quantity++
         }
 
         res.status(200).send(tank)
