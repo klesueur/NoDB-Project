@@ -3,6 +3,14 @@ const plants = require('../data.json')
 const tank = {total: 0, wetPlants: []}
 let tankId = 0
 
+const updateTankTotal = () => {
+    const total = tank.wetPlants.reduce((acc, element) => {
+        return acc + element.quantity
+    },0)
+
+    tank.total = total 
+}
+
 module.exports = {
     getTank: (req, res) => {
         res.status(200).send(tank)
@@ -25,12 +33,8 @@ module.exports = {
         } else {
             tank.wetPlants[index].quantity += +quantity
         }
-//* Below is being reused in other methods for quantity total.
-        const total = tank.wetPlants.reduce((acc, element) => {
-            return acc + element.quantity
-        }, 0)
 
-        tank.total = total 
+        updateTankTotal()
 
         res.status(200).send(tank)
     },
@@ -54,12 +58,7 @@ module.exports = {
                 tank.wetPlants.splice(index, 1)
             }
         }
-
-        const total = tank.wetPlants.reduce((acc, element) => {
-            return acc + element.quantity
-        },0)
-
-        tank.total = total 
+        updateTankTotal()
 
         res.status(200).send(tank)
     },
@@ -74,14 +73,15 @@ module.exports = {
         }
         tank.wetPlants.splice(index, 1)
 
-        const total = tank.wetPlants.reduce((acc, element) => {
-            return acc + element.quantity
-        },0)
-
-        tank.total = total 
+        updateTankTotal()
 
         res.status(200).send(tank)
     },
 
-    reset: (req, res) => {}
+    reset: (req, res) => {
+        tank.total = 0
+        tank.wetPlants = []
+
+        res.status(200).send(cart)
+    },
 }
