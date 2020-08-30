@@ -11,7 +11,7 @@ module.exports = {
     addToTank: (req, res) => {
         const {plantId, quantity} = req.body
 
-        const index = tank.plants.findIndex((element) => element.id === +plantId)
+        const index = tank.wetPlants.findIndex((element) => element.id === +plantId)
 
         if(index === -1) {
             const plant = plants.find((element) => element.id === +plantId)
@@ -19,14 +19,14 @@ module.exports = {
             plant.tankId = tankId
             plant.quantity = +quantity 
 
-            tank.plants.push(plant)
+            tank.wetPlants.push(plant)
 
             tankId++
         } else {
-            tank.plants[index].quantity += +quantity
+            tank.wetPlants[index].quantity += +quantity
         }
-
-        const total = tank.plants.reduce((acc, element) => {
+//* Below is being reused in other methods for quantity total.
+        const total = tank.wetPlants.reduce((acc, element) => {
             return acc + element.quantity
         },0)
 
@@ -39,23 +39,23 @@ module.exports = {
         const {tank_id} = req.params
         const {action} = req.query
 
-        const index = tank.plants.findIndex(element => element.tankId === +tank_id)
+        const index = tank.wetPlants.findIndex((element) => element.tankId === +tank_id)
 
         if (index === -1) {
-            return res.status(404).send("Plant not in Scott's fish tank.")
+            return res.status(404).send("Plant not in Scott's fish tank. 2.")
         } 
 
         if (action === 'up') {
-            tank.plants[index].quantity += 1
+            tank.wetPlants[index].quantity += 1
         } else {
-            if(tank.plants[index].quantity > 1) {
-                tank.plants[index].quantity -= 1
+            if(tank.wetPlants[index].quantity > 1) {
+                tank.wetPlants[index].quantity -= 1
             } else {
-                tank.plants.splice(index, 1)
+                tank.wetPlants.splice(index, 1)
             }
         }
 
-        const total = tank.plants.reduce((acc, element) => {
+        const total = tank.wetPlants.reduce((acc, element) => {
             return acc + element.quantity
         },0)
 
