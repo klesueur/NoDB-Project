@@ -1,6 +1,6 @@
 const plants = require('../data.json')
 
-const tank = {total: 0, plants: []}
+const tank = {total: 0, wetPlants: []}
 let tankId = 0
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
 
             tankId++
         } else {
-            tank.plants[index].quantity++
+            tank.plants[index].quantity += +quantity
         }
 
         const total = tank.plants.reduce((acc, element) => {
