@@ -1,6 +1,9 @@
 import React from 'react'
 
 const TankItems = (props) => {
+
+    const {tankId} = props.data
+
     return (
 
         <div className="tank-item">
@@ -10,8 +13,8 @@ const TankItems = (props) => {
                 <p> Quantity {props.data.quantity}</p>
 
                 <div className="tankPlantButton">
-                    <button>-</button>
-                    <button>+</button>
+                    <button onClick={() => props.changeQuantity(tankId, 'down')} > - </button>
+                    <button onClick={() => props.changeQuantity(tankId, 'up')}> + </button>
                 </div>
             </div>
         </div>

@@ -41,9 +41,9 @@ class Display extends Component {
 
     changeQuantity(tankId, action) {
         axios.put(`/api/tank/${tankId}$action=${action}`).then((res) => {
-            this.setState = {
+            this.setState = ({
                 tank: res.data,
-            }
+            })
         })
     }
 

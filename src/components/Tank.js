@@ -8,7 +8,12 @@ const Tank = (props) => {
             <div className="tankObject">
                 
                 {props.tank.wetPlants.map(element => {
-                    return <TankItems key={element.tankId} data={element} />
+                    return (
+                        <TankItems 
+                            changeQuantity={props.changeQuantity}
+                            key={element.tankId} 
+                            data={element} /> 
+                        )
                 })}
             </div>
 
