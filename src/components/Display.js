@@ -1,11 +1,13 @@
 import React, {Component} from 'react' 
+import PlantContent from './PlantContent'
+import Tank from './Tank'
 
 
 class Display extends Component {
     constructor() {
         super() 
 
-        this.state - {
+        this.state = {
             plants: [],
             tank: {
                 total: 0,
@@ -24,17 +26,12 @@ class Display extends Component {
 
     render() {
         return (
-            <div>
-
-            
+            <div className='display'>
+                <PlantContent />
+                <Tank />
 
             </div>
         )
     }
 }
-
-
-
-
-
 export default Display 

@@ -1,18 +1,18 @@
 import React from 'react'
-import Display from '.components/Display' 
+import Display from './components/Display' 
 import './App.css'
-import './reset.css'
+
 
 function App() {
   return(
 
-    <div className='body'>
+    <div className='App'>
 
         <header className='header'>
-          <h1 className='tanktitle'> FISH TANK BUILDER </h1>
+          <h1 className='appTitle'> FISH TANK BUILDER </h1>
         </header>
         
-        <section className='plantsContent' getElementByID='section'>
+        {/* <section className='plantsContent' getElementByID='section'>
             <div className='plantsDisplay'>
 
             </div>
@@ -22,7 +22,7 @@ function App() {
             <div className='tankObject'> Scott's Fish Tank 
                 <div className='tanksPlantDisplay'></div>
             </div>
-            </footer>
+            </footer> */}
 
         <Display />
     </div>
