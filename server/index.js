@@ -3,7 +3,7 @@ const app = express()
 const plantsCtrl = require('./controllers/plantsController')
 const tankCtrl = require('./controllers/tankController')
 
-const SERVER_PORT = 3000
+const SERVER_PORT = 4000
 
 app.use(express.json())
 
@@ -19,7 +19,7 @@ app.get('/api/tank', tankCtrl.getTank)
 app.post('/api/tank', tankCtrl.addToTank)
 app.put('/api/tank/:tank_id', tankCtrl.changeQuantity)
 // app.delete('api/tank/:tank_id', tankCtrl.removeFromTank)
-app.delete('api/tank', tankCtrl.reset)
+app.delete('/api/tank', tankCtrl.reset)
 
 app.listen(SERVER_PORT, () => 
 console.log(`Running fish tank builder on port ${SERVER_PORT}`)

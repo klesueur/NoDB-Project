@@ -33,23 +33,28 @@ class Display extends Component {
 
     addToTank(plantId, quantity) {
         axios.post('/api/tank', {plantId, quantity}).then(res => {
+console.log("add response", res.data)
             this.setState({
                 tank: res.data, 
             })
         })
+        .catch(error => console.log(error))
     }
 
     changeQuantity(tankId, action) {
         axios.put(`/api/tank/${tankId}?action=${action}`).then((res) => {
-            this.setState = ({
+console.log("resolved", res.data)
+            this.setState ({
                 tank: res.data,
             })
+
         })
+        .catch(error => console.log(error))
     }
 
     reset() {
         axios.delete('/api/tank').then((res) => {
-            this.setState = ({
+            this.setState ({
                 tank: res.data,
             })
         })
@@ -59,7 +64,8 @@ class Display extends Component {
         return (
             <div className='display'>
                 <PlantContent 
-                    addToTank={this.addToTank}            plantContent={this.state.plants} />
+                    addToTank={this.addToTank}            
+                    plantContent={this.state.plants} />
                 <Tank 
                     tank={this.state.tank} 
                     changeQuantity={this.changeQuantity}

@@ -20,7 +20,7 @@ module.exports = {
         const {plantId, quantity} = req.body
 
         const index = tank.wetPlants.findIndex((element) => element.id === +plantId)
-
+console.log("index", index)
         if(index === -1) {
             const plant = plants.find((element) => element.id === +plantId)
 
@@ -35,11 +35,13 @@ module.exports = {
         }
 
         updateTankTotal()
-
+console.log("tank", tank)
         res.status(200).send(tank)
     },
 
     changeQuantity: (req, res) => {
+        console.log("query", req.query)
+        console.log("params", req.params)
         const {tank_id} = req.params
         const {action} = req.query
 
@@ -59,7 +61,7 @@ module.exports = {
             }
         }
         updateTankTotal()
-
+// console.log("tank", tank)
         res.status(200).send(tank)
     },
 

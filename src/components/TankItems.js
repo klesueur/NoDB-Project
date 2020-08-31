@@ -3,7 +3,7 @@ import React from 'react'
 const TankItems = (props) => {
 
     const {tankId} = props.data
-
+console.log("props data", props.data.quantity)
     return (
 
         <div className="tank-item">
