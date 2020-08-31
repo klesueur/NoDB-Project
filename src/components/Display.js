@@ -47,7 +47,7 @@ class Display extends Component {
         return (
             <div className='display'>
                 <PlantContent addToTank={this.addToTank} plantContent={this.state.plants} />
-                <Tank />
+                <Tank tank={this.state.tank} />
 
             </div>
         )

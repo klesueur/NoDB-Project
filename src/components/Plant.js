@@ -4,6 +4,7 @@ class Plant extends Component {
     constructor() {
         super()
 
+        /* this.State below is currently not being used in this component - it is just there for now. It is to set quantity of dry plant back to 0 after it is addded. */
         this.state = {
             quantity: 0,
         }
