@@ -1,4 +1,4 @@
-const plants = require('../data.json')
+ const plants = require('../data.json')
 
 const tank = {total: 0, wetPlants: []}
 let tankId = 0
