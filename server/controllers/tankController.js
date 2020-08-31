@@ -25,13 +25,13 @@ module.exports = {
             const plant = plants.find((element) => element.id === +plantId)
 
             plant.tankId = tankId
-            plant.quantity = +quantity 
+            plant.quantity = 0
 
             tank.wetPlants.push(plant)
 
             tankId++
         } else {
-            tank.wetPlants[index].quantity += +quantity
+            tank.wetPlants[index].quantity++
         }
 
         updateTankTotal()

@@ -7,7 +7,7 @@ const PlantContent = (props) => {
             {props.plantContent.map((element) => {
         return ( 
             <Plant 
-            addToTank={props.addToCart}
+            addToTank={props.addToTank}
             key={element.id} data={element} />
         )
         })}
