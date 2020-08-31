@@ -28,7 +28,13 @@ class Display extends Component {
         })
     }
 
-    addToTank(id, quantity) {}
+    addToTank(id, quantity) {
+        axios.post('/api/tank', {plantId: id, quantity}).then(res => {
+            this.setState({
+                tank: res.data, 
+            })
+        })
+    }
 
     changeQuantity(id, action) {}
 
