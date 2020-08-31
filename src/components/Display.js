@@ -39,7 +39,13 @@ class Display extends Component {
         })
     }
 
-    changeQuantity(id, action) {}
+    changeQuantity(wetPlantId, action) {
+        axios.put(`/api/tank/${wetPlantId}$action=${action}`).then((res) => {
+            this.setState = {
+                tank: res.data,
+            }
+        })
+    }
 
     reset() {}
 
