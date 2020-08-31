@@ -4,8 +4,9 @@ import TankItems from './TankItems'
 const Tank = (props) => {
     return (
         <div className="tankContent">
+            <h2> Scott's Fish Tank</h2>
             <div className="tankObject">
-                <h2> Scott's Fish Tank</h2>
+                
                 {props.tank.wetPlants.map(element => {
                     return <TankItems key={element.tankId} data={element} />
                 })}
