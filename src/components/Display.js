@@ -37,7 +37,7 @@ class Display extends Component {
     render() {
         return (
             <div className='display'>
-                <PlantContent plants={this.state.plants} />
+                <PlantContent plantContent={this.state.plants} />
                 <Tank />
 
             </div>

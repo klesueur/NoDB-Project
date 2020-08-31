@@ -18,6 +18,7 @@ class Plant extends Component {
         return (
 
             <div className="plantDescription">
+                <img  src={this.props.data.image} width="150" height="110"/>
                 <div className="addButton">
                     <button> ADD TO TANK </button>
                 </div>
