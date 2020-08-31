@@ -47,7 +47,13 @@ class Display extends Component {
         })
     }
 
-    reset() {}
+    reset() {
+        axios.delete('/api/tank').then((res) => {
+            this.setState = {
+                tank: res.data,
+            }
+        })
+    }
 
     render() {
         return (
