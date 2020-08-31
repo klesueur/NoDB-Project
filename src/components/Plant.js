@@ -19,6 +19,8 @@ class Plant extends Component {
 
             <div className="plantDescription">
                 <img  src={this.props.data.image} width="150" height="110"/>
+                <p>{this.props.data.name}</p>
+                <p>{this.props.data.light}</p>
                 <div className="addButton">
                     <button> ADD TO TANK </button>
                 </div>

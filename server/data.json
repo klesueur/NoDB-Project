@@ -3,76 +3,76 @@
         "id": 0,
         "name": "Java Fern",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/java-fern-11727078228049.jpg?v=1571439218",
-        "light": "Low"
+        "light": "Light: Low"
     },
 
     {
         "id": 1,
         "name": "Anubias Nana",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/anubias-nana-petite-11711133417553.jpg?v=1580855460",
-        "light": "Low"
+        "light": "Light: Low"
     },
 
     {
         "id": 2,
         "name": "Bucephalandra",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/bucephalandra-godzilla-on-lava-stone-11859044696145.jpg?v=1571439246",
-        "light": "Medium"
+        "light": "Light: Medium"
     },
 
     {
         "id": 3,
         "name": "Rotala",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/rotala-h-ra-11718933053521.jpg?v=1571439222",
-        "light": "High"
+        "light": "Light: High"
     },
 
     {
         "id": 4,
         "name": "Cryptocoryne",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/cryptocoryne-pink-flamingo-11859755008081.jpg?v=1571439247",
-        "light": "Medium"
+        "light": "Light: Medium"
     },
 
     {
         "id": 5,
         "name": "Bolbitis",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/mini-bolbitis-baby-leaf-11711344967761.jpg?v=1571439201",
-        "light": "Low"
+        "light": "Light: Low"
     },
 
     {
         "id": 6,
         "name": "Monte Carlo",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/hemianthus-callitrichoides-cuba-dwarf-baby-tears-11726408319057.jpg?v=1571439225",
-        "light": "Medium"
+        "light": "Light: Medium"
     },
 
     {
         "id": 7,
         "name": "Hygro. Pinnatifida",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/hygrophila-pinnatifida-11726582054993.jpg?v=1571439201",
-        "light": "High"
+        "light": "Light: High"
     },
 
     {
         "id": 8,
         "name": "Pogostemon",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/pogostemon-helferi-downoi-3624171798609.jpg?v=1571439243",
-        "light": "High"
+        "light": "Light: High"
     },
 
     {
         "id": 9,
         "name": "Ludwigia",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/ludwigia-crystal-11711124111441.jpg?v=1571439240",
-        "light": "Medium"
+        "light": "Light: Medium"
     },
 
     {
         "id": 10,
         "name": "Bacopa",
         "image": "https://cdn.shopify.com/s/files/1/1167/8568/products/bacopa-monnieri-11711302631505.jpg?v=1581637008",
-        "light": "Low"
+        "light": "Light: Low"
     }
 ]
