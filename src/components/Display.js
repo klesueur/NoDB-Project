@@ -15,6 +15,9 @@ class Display extends Component {
                 wetPlants: []
             },
         }
+        this.addToTank = this.addToTank.bind(this)
+        this.changeQuantity = this.changeQuantity.bind(this)
+        this.reset = this.reset.bind(this)
     }
 
     componentDidMount() {
@@ -28,8 +31,8 @@ class Display extends Component {
         })
     }
 
-    addToTank(id, quantity) {
-        axios.post('/api/tank', {plantId: id, quantity}).then(res => {
+    addToTank(plantId, quantity) {
+        axios.post('/api/tank', {plantId, quantity}).then(res => {
             this.setState({
                 tank: res.data, 
             })
@@ -43,7 +46,7 @@ class Display extends Component {
     render() {
         return (
             <div className='display'>
-                <PlantContent plantContent={this.state.plants} />
+                <PlantContent addToTank={this.addToTank} plantContent={this.state.plants} />
                 <Tank />
 
             </div>

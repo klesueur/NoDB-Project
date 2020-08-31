@@ -7,12 +7,19 @@ class Plant extends Component {
         this.state = {
             quantity: 0,
         }
+
     }
     
     /* LINE BELOW IS TO HANDLE QUANTITY BEFORE ADD TO TANK */
     // handleQuantityChange(action) {}
 
-    handleAddToTank() {}
+    handleAddToTank() {
+        this.props.addToTank(this.props.data.id, this.state.quantity)
+        /* Line below is to reset quantity back to zero, if I'm using quantity button handle BEFORE adding to Tank */
+        this.setState({
+            quantity: 0,
+        })
+    }
 
     render() {
         return (
@@ -22,7 +29,7 @@ class Plant extends Component {
                 <p>{this.props.data.name}</p>
                 <p>{this.props.data.light}</p>
                 <div className="addButton">
-                    <button> ADD TO TANK </button>
+                    <button onClick={() => this.handleAddToTank()} > ADD TO TANK </button>
                 </div>
             </div>
 
