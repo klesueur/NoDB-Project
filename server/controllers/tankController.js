@@ -25,7 +25,7 @@ module.exports = {
             const plant = plants.find((element) => element.id === +plantId)
 
             plant.tankId = tankId
-            plant.quantity = 0
+            plant.quantity = 1
 
             tank.wetPlants.push(plant)
 

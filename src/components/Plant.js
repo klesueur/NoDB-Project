@@ -17,7 +17,7 @@ class Plant extends Component {
         this.props.addToTank(this.props.data.id, this.state.quantity)
         /* Line below is to reset quantity back to zero, if I'm using quantity button handle BEFORE adding to Tank */
         // this.setState({
-        //     quantity: 0,
+        //     quantity: 1,
         // })
     }
 
