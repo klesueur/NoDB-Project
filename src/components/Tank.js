@@ -14,7 +14,7 @@ const Tank = (props) => {
 
             <div className="total">
                 Plants In Tank: {props.tank.total}
-                <button> Reset </button>
+                <button onClick={props.reset}> Reset </button>
             </div>
         </div>
     )

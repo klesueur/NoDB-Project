@@ -39,8 +39,8 @@ class Display extends Component {
         })
     }
 
-    changeQuantity(wetPlantId, action) {
-        axios.put(`/api/tank/${wetPlantId}$action=${action}`).then((res) => {
+    changeQuantity(tankId, action) {
+        axios.put(`/api/tank/${tankId}$action=${action}`).then((res) => {
             this.setState = {
                 tank: res.data,
             }
@@ -49,17 +49,21 @@ class Display extends Component {
 
     reset() {
         axios.delete('/api/tank').then((res) => {
-            this.setState = {
+            this.setState = ({
                 tank: res.data,
-            }
+            })
         })
     }
 
     render() {
         return (
             <div className='display'>
-                <PlantContent addToTank={this.addToTank} plantContent={this.state.plants} />
-                <Tank tank={this.state.tank} />
+                <PlantContent 
+                    addToTank={this.addToTank}            plantContent={this.state.plants} />
+                <Tank 
+                    tank={this.state.tank} 
+                    changeQuantity={this.changeQuantity}
+                    reset={this.reset} />
 
             </div>
         )
